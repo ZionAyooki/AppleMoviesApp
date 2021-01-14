@@ -1,11 +1,16 @@
 import './App.css';
 import NavBar from "./components/navbar/NavBar";
+import {HashRouter, Route, Switch} from "react-router-dom";
+import HomePage from "./components/homepage/HomePage";
 
 function App() {
   return (
-    <div>
+    <HashRouter>
       <NavBar />
-    </div>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+      </Switch>
+    </HashRouter>
   );
 }
 
