@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# AppleSeeds Movies App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was done during the front-end course at AppleSeeds. 
 
-## Available Scripts
+## Practice materials
 
-In the project directory, you can run:
+- Create react app
+- React components lifecycle 
+- React router
+- Using API and AJAX
 
-### `npm start`
+## Instructions for this exercise
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This app is a 4-step exercise. In each step we will change some requirements and add new requirements. The final app will include all the steps together.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Step 1 - Actor gallery
 
-### `npm test`
+- The app will have a page for a gallery of actors.
+- Each actor in the gallery will be a bootstrap card showing an image, name and age of the actor.
+- Clicking on actor card will open (in a new tab) the IMDB page of the actor.
+- Above the gallery there will be an input field to filter the gallery based on the actor's name.
+- Use an actor model class with the following fields: first name, last name, birthday, image, IMDB link and age (method to calculate age based on the birthday).
+- Data should be hardcoded.
+- Gallery should be responsive.
+- `Bonus:` Add option for sorting the gallery by first name, last name or age (Select box).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2 - Lifecycle and AJAX
 
-### `npm run build`
+- Create a JSON file with the actor's data.
+- Load the actor's data from the JSON file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 3 - Movie gallery
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The app will have a page for a gallery of movies.
+- Each movie will have the following properties: movie name, length in minutes, poster, director and main stars.
+- The page will have a search field to search for movies by name from TMDB API.
+- Clicking on a movie on the search results will add the movie card to the gallery.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 4 - Routing
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The app will have a navbar to navigate between pages (homepage - simple landing page, actors - the actor's gallery page, movies - the movie's gallery page).
+- Clicking on a movie card from the movie's gallery will lead to a single movie page with its properties.
+- All movies details should be loaded from TMDB API.
